@@ -5,8 +5,10 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
-
   "frameworks": {
     "net46": { }
+  },
+  "dependencies": {
+    "EntityFramework": "6.1.3"
   }
 }
