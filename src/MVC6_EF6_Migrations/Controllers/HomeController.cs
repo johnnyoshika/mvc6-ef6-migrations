@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using Entities;
 
 namespace MVC6_EF6_Migrations.Controllers
 {
@@ -10,6 +11,13 @@ namespace MVC6_EF6_Migrations.Controllers
     {
         public IActionResult Index()
         {
+            var context = new StoreContext();
+            context.Books.Add(new EBook
+            {
+                Title = "Red"
+            });
+            context.SaveChanges();
+
             return View();
         }
 
