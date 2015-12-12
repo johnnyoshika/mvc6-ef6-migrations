@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.6": {
-      "Entities/1.0.0": {
+      "Entities2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -1690,7 +1690,7 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "Entities/1.0.0": {
+      "Entities2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -3380,7 +3380,7 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "Entities/1.0.0": {
+      "Entities2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -5071,9 +5071,9 @@
     }
   },
   "libraries": {
-    "Entities/1.0.0": {
+    "Entities2/1.0.0": {
       "type": "project",
-      "path": "../Entities/project.json"
+      "path": "../../wrap/Entities2/project.json"
     },
     "EntityFramework/6.1.3": {
       "type": "package",
@@ -7020,7 +7020,6 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Entities >= 1.0.0-*",
       "Microsoft.AspNet.Diagnostics >= 1.0.0-rc1-final",
       "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Mvc >= 6.0.0-rc1-final",
@@ -7035,6 +7034,8 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
-    "DNX,Version=v4.6": []
+    "DNX,Version=v4.6": [
+      "Entities2 >= 1.0.0-*"
+    ]
   }
 }

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Entities2/Entities2.csproj",
+      "bin": {
+        "assembly": "../../Entities2/obj/{configuration}/Entities2.dll",
+        "pdb": "../../Entities2/obj/{configuration}/Entities2.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3"
+      }
+    }
+  }
+}
