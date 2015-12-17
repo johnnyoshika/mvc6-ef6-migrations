@@ -3,11 +3,36 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.6": {
-      "Entities2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+      "Atquin.EntityFramework.Migrations/1.0.0-rc1-final": {
+        "type": "package",
         "dependencies": {
-          "EntityFramework": "6.1.3"
+          "EntityFramework": "6.1.3",
+          "Microsoft.Extensions.Configuration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Atquin.EntityFramework.Migrations": "1.0.0-rc1-final"
         }
       },
       "EntityFramework/6.1.3": {
@@ -1690,11 +1715,36 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "Entities2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+      "Atquin.EntityFramework.Migrations/1.0.0-rc1-final": {
+        "type": "package",
         "dependencies": {
-          "EntityFramework": "6.1.3"
+          "EntityFramework": "6.1.3",
+          "Microsoft.Extensions.Configuration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Atquin.EntityFramework.Migrations": "1.0.0-rc1-final"
         }
       },
       "EntityFramework/6.1.3": {
@@ -3380,11 +3430,36 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "Entities2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+      "Atquin.EntityFramework.Migrations/1.0.0-rc1-final": {
+        "type": "package",
         "dependencies": {
-          "EntityFramework": "6.1.3"
+          "EntityFramework": "6.1.3",
+          "Microsoft.Extensions.Configuration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Atquin.EntityFramework.Migrations.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Atquin.EntityFramework.Migrations": "1.0.0-rc1-final"
         }
       },
       "EntityFramework/6.1.3": {
@@ -5071,9 +5146,23 @@
     }
   },
   "libraries": {
-    "Entities2/1.0.0": {
+    "Entities/1.0.0": {
       "type": "project",
-      "path": "../../wrap/Entities2/project.json"
+      "path": "../Entities/project.json"
+    },
+    "Atquin.EntityFramework.Migrations/1.0.0-rc1-final": {
+      "type": "package",
+      "sha512": "qDElS0dWQdIj9PRTGXYus1cKcspU+4KBaJP5c/lwQa0xpDYb9DYicM9HPLDzi1OQyRS/KvWXa1o0v0JsWUOv3A==",
+      "files": [
+        "app/ef",
+        "app/ef.cmd",
+        "app/project.json",
+        "Atquin.EntityFramework.Migrations.1.0.0-rc1-final.nupkg",
+        "Atquin.EntityFramework.Migrations.1.0.0-rc1-final.nupkg.sha512",
+        "Atquin.EntityFramework.Migrations.nuspec",
+        "lib/dnx451/Atquin.EntityFramework.Migrations.dll",
+        "lib/dnx451/Atquin.EntityFramework.Migrations.xml"
+      ]
     },
     "EntityFramework/6.1.3": {
       "type": "package",
@@ -7020,6 +7109,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Entities >= 1.0.0-*",
       "EntityFramework >= 6.1.3",
       "Microsoft.AspNet.Diagnostics >= 1.0.0-rc1-final",
       "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-rc1-final",
@@ -7035,8 +7125,6 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
-    "DNX,Version=v4.6": [
-      "Entities2 >= 1.0.0-*"
-    ]
+    "DNX,Version=v4.6": []
   }
 }

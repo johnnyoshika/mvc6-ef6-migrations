@@ -6,9 +6,12 @@
   "projectUrl": "",
   "licenseUrl": "",
   "frameworks": {
-    "net46": { }
+    "dnx451": { }
   },
   "dependencies": {
-    "EntityFramework": "6.1.3"
+    "Atquin.EntityFramework.Migrations": "1.0.0-rc1-final"
+  },
+  "commands": {
+    "ef": "Atquin.EntityFramework.Migrations"
   }
 }

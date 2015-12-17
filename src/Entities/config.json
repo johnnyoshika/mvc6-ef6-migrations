@@ -1,0 +1,8 @@
+{
+  "Data": {
+    "Default": {
+      "ConnectionString": "Server=.;Database=MVC6_EF6_Migrations;Integrated Security=SSPI;"
+    }
+  },
+  "_Comment": "The connection string doesn't seem to get found.  Use this intead: dnx ef add Initial -c \"Server=.;Database=MVC6_EF6_Migrations;Integrated Security=SSPI;\" -p \"System.Data.SqlClient\""
+}

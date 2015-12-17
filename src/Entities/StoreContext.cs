@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    [DbConfigurationType(typeof(CodeConfig))]
+    //[DbConfigurationType(typeof(CodeConfig))]
     public class StoreContext : DbContext
     {
 
@@ -30,13 +30,13 @@ namespace Entities
         }
     }
 
-    class CodeConfig : DbConfiguration
-    {
-        public CodeConfig()
-        {
-            SetDefaultConnectionFactory(new System.Data.Entity.Infrastructure.SqlConnectionFactory());
-            SetProviderServices("System.Data.SqlClient",
-                System.Data.Entity.SqlServer.SqlProviderServices.Instance);
-        }
-    }
+    //class CodeConfig : DbConfiguration
+    //{
+    //    public CodeConfig()
+    //    {
+    //        SetDefaultConnectionFactory(new System.Data.Entity.Infrastructure.SqlConnectionFactory());
+    //        SetProviderServices("System.Data.SqlClient",
+    //            System.Data.Entity.SqlServer.SqlProviderServices.Instance);
+    //    }
+    //}
 }
