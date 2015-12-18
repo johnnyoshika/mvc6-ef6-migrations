@@ -15,6 +15,9 @@ namespace Entities
             Property(b => b.Title)
                 .HasMaxLength(200)
                 .IsRequired();
+
+            Property(b => b.Author)
+                .HasMaxLength(300);
         }
     }
 }
