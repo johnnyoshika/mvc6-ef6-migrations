@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Migrations;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Entities
 
         static StoreContext()
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<StoreContext>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreContext, Configuration>());
         }
 
         public StoreContext()
